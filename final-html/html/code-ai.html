@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>程式開發輔助AI - AI工具箱</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- 上方導覽列 -->
+    <nav>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="text-ai.html">文字AI</a></li>
+            <li><a href="code-ai.html" class="active">程式AI</a></li>
+            <li><a href="data-ai.html">資料AI</a></li>
+            <li><a href="image-ai.html">圖像AI</a></li>
+            <li><a href="video-ai.html">影音AI</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- 頁面標題 -->
+        <div class="info">
+            <h1>程式開發輔助AI — Claude</h1>
+            <p>Claude 是由 Anthropic 公司開發的 AI 助手，擅長程式碼撰寫、debug、程式碼解釋，是工程師的好幫手。</p>
+        </div>
+
+        <!-- 基本介紹 -->
+        <div class="card" style="text-align: center;">
+            <img src="../picture/claude-logo.svg" alt="Claude Logo" class="logo-img">
+            <h3>什麼是Claude？</h3>
+            <p>Claude 是由 Anthropic 公司開發的大型語言模型，Anthropic 是由前 OpenAI 員工創立的公司。Claude 的名字取自數學家 Claude Shannon。</p>
+            <p>Claude 的特色是注重安全性與真實性，在程式碼相關任務上表現非常出色，目前最新版本是 Claude 4（Sonnet / Opus）。</p>
+        </div>
+
+        <!-- 主要功能 -->
+        <div class="card">
+            <h3>主要功能</h3>
+            <table>
+                <tr>
+                    <th>功能</th>
+                    <th>說明</th>
+                </tr>
+                <tr>
+                    <td>程式碼生成</td>
+                    <td>用自然語言描述需求，自動幫你寫出程式碼</td>
+                </tr>
+                <tr>
+                    <td>程式碼除錯</td>
+                    <td>貼上錯誤訊息或程式碼，幫你找出問題</td>
+                </tr>
+                <tr>
+                    <td>程式碼解釋</td>
+                    <td>看不懂的程式碼，叫它一行一行解釋給你聽</td>
+                </tr>
+                <tr>
+                    <td>重構優化</td>
+                    <td>把寫很亂的程式碼改得更乾淨、更有效率</td>
+                </tr>
+                <tr>
+                    <td>單元測試</td>
+                    <td>自動幫你寫測試程式，確認功能正常</td>
+                </tr>
+                <tr>
+                    <td>技術文件撰寫</td>
+                    <td>幫你的程式碼產生說明文件和註解</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 優缺點比較 -->
+        <div class="card">
+            <h3>優點與缺點</h3>
+            <table>
+                <tr>
+                    <th>優點</th>
+                    <th>缺點</th>
+                </tr>
+                <tr>
+                    <td>程式碼品質高，邏輯清晰</td>
+                    <td>免費版有使用次數限制</td>
+                </tr>
+                <tr>
+                    <td>支援超長內容（最高20萬字元）</td>
+                    <td>網路不好時反應較慢</td>
+                </tr>
+                <tr>
+                    <td>擅長理解複雜的程式邏輯</td>
+                    <td>太冷門的程式語言支援較差</td>
+                </tr>
+                <tr>
+                    <td>可以直接上傳程式碼檔案</td>
+                    <td>有時會寫出有安全漏洞的程式碼</td>
+                </tr>
+                <tr>
+                    <td>支援多種程式語言（Python、JS、Java等）</td>
+                    <td>新出的技術可能還不熟悉</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 實際應用範例 -->
+        <div class="card">
+            <h3>學生怎麼用Claude寫程式？</h3>
+            <p>以下是在程式作業中常用的方式：</p>
+            <table>
+                <tr>
+                    <th>用途</th>
+                    <th>範例指令</th>
+                </tr>
+                <tr>
+                    <td>寫程式</td>
+                    <td>"用Python寫一個計算機程式，要有加減乘除功能"</td>
+                </tr>
+                <tr>
+                    <td>找bug</td>
+                    <td>"我的程式跑出 IndexError，幫我看哪裡錯了"</td>
+                </tr>
+                <tr>
+                    <td>解釋程式碼</td>
+                    <td>"請用簡單的話解釋這段程式在做什麼"</td>
+                </tr>
+                <tr>
+                    <td>加註解</td>
+                    <td>"幫我在每一行程式碼加上中文註解"</td>
+                </tr>
+                <tr>
+                    <td>改寫程式</td>
+                    <td>"把這段 for 迴圈改成 while 迴圈的寫法"</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 如何使用 -->
+        <div class="card">
+            <h3>如何使用Claude？</h3>
+            <p>1. 連到 <a href="https://claude.ai" target="_blank">claude.ai</a></p>
+            <p>2. 註冊一個免費帳號（支援 Google 帳號快速登入）</p>
+            <p>3. 在對話框輸入你的需求，例如「幫我寫一個Python計算機」</p>
+            <p>4. Claude 會自動產生程式碼，並附上說明</p>
+            <p>5. 可以直接上傳 .py 或 .js 檔案給它分析</p>
+            <hr>
+            <p style="color: #94a3b8; font-size: 14px;">💡 小提醒：AI 寫的程式碼建議自己跑過確認沒問題，也要理解程式邏輯，不要直接複製貼上喔！</p>
+        </div>
+
+        <!-- 頁尾 -->
+        <div class="teammate">
+            <p>&copy; 2024 AI工具箱. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

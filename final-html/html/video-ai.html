@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影音生成AI - AI工具箱</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- 上方導覽列 -->
+    <nav>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="text-ai.html">文字AI</a></li>
+            <li><a href="code-ai.html">程式AI</a></li>
+            <li><a href="data-ai.html">資料AI</a></li>
+            <li><a href="image-ai.html">圖像AI</a></li>
+            <li><a href="video-ai.html" class="active">影音AI</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- 頁面標題 -->
+        <div class="info">
+            <h1>影音生成AI — Google Veo / OpenAI Sora / Runway Gen-3</h1>
+            <p>介紹全球最尖端的 AI 影片與音訊生成工具，只需輸入簡單的文字劇本或提供圖片，AI 就能在短時間內創作出高畫質、具備電影級鏡頭感與震撼音效的影音作品。</p>
+        </div>
+
+        <!-- 基本介紹與工具連結 -->
+        <div class="card" style="text-align: center;">
+            <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=400&q=80" alt="Video AI Logo" class="logo-img" style="max-width: 120px; border-radius: 8px; margin-bottom: 15px;">
+            <h3>什麼是影音生成 AI？</h3>
+            <p>影音 AI 是融合了電腦視覺與語音合成的尖端技術。它可以根據文字提示詞（Prompt）無中生有創作出 4K 高畫質短片，或是將一張靜態照片變成動態的運鏡影片。不僅如此，連背景音樂、旁白配音都能一併交由 AI 自動配好，讓一人製作電影、動畫成為可能。</p>
+            
+            <div style="margin: 25px 0; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                <a href="https://gemini.google.com" target="_blank" style="padding: 12px 20px; background-color: #1a73e8; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 0.9rem; box-shadow: 0 2px 4px rgba(26,115,232,0.2);">
+                    Google Veo (Gemini 深度整合影像生成)
+                </a>
+                <a href="https://openai.com/sora" target="_blank" style="padding: 12px 20px; background-color: #10b981; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 0.9rem; box-shadow: 0 2px 4px rgba(16,185,129,0.2);">
+                    OpenAI Sora (電影級物理世界模擬)
+                </a>
+                <a href="https://runwayml.com" target="_blank" style="padding: 12px 20px; background-color: #ea580c; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 0.9rem; box-shadow: 0 2px 4px rgba(234,88,12,0.2);">
+                    Runway Gen-3 (專業導演級動態控制)
+                </a>
+            </div>
+            <p>在製作網頁的多媒體展示、行銷短片、通識課報告影片時，這幾款工具能幫你們省去租借攝影棚、購買高昂運鏡設備的大量成本。</p>
+        </div>
+
+        <!-- 主要功能 -->
+        <div class="card">
+            <h3>主要功能</h3>
+            <table>
+                <tr>
+                    <th>功能</th>
+                    <th>說明</th>
+                </tr>
+                <tr>
+                    <td>文生影片 (Text-to-Video)</td>
+                    <td>輸入文字分鏡劇本（例如：老人在雨中漫步），AI 自動生成具備合理光影與物理碰撞的 4K 影片</td>
+                </tr>
+                <tr>
+                    <td>圖生影片 (Image-to-Video)</td>
+                    <td>上傳一張靜態照片，並指定運鏡方式（如：鏡頭拉近、空拍機俯瞰），讓靜態畫面動起來</td>
+                </tr>
+                <tr>
+                    <td>影片風格轉化 (Video-to-Video)</td>
+                    <td>上傳一段真人實拍影片，利用 AI 一鍵把整段影片重繪成賽博朋克、水墨畫或 3D 動漫風格</td>
+                </tr>
+                <li>AI 人聲配音與翻譯</li>
+                <td>輸入文稿，自動生成富有情感的多國語言旁白，還能自動將台詞對齊嘴型（Lip-sync）</td>
+                </tr>
+                <tr>
+                    <td>文字生成音樂 (Text-to-Music)</td>
+                    <td>輸入想要的氛圍（例如：史詩磅礴、復古電子），AI 自動創作出無版權問題的完整背景音樂</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 優缺點比較 -->
+        <div class="card">
+            <h3>優點與缺點</h3>
+            <table>
+                <tr>
+                    <th>優點</th>
+                    <th>缺點</th>
+                </tr>
+                <tr>
+                    <td>成本極低，不需要昂貴的攝影器材與演員，幾分鐘內就能獨立產出精緻短片</td>
+                    <td>影片長度通常有限制，且有時在處理複雜人體互動時仍會出現物理邏輯破綻</td>
+                </tr>
+                <tr>
+                    <td>具備好萊塢等級的鏡頭掌控力，不論是空拍、橫移、微距運鏡都能完美呈現</td>
+                    <td>雲端運算時間較長，渲染高畫質長影片需要消耗大量點數或付費升級</td>
+                </tr>
+                <tr>
+                    <td>內建物理引擎模擬，光影折射、液體流動、煙霧擴散的效果非常逼真</td>
+                    <td>目前難以百分之百精準控制影片中角色前後鏡頭的「外貌一致性」</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 實際應用範例 -->
+        <div class="card">
+            <h3>學生怎麼用 AI 進行短片創作？</h3>
+            <p>以下是同學們在製作專案簡介影片、通識報告時最實用的 AI 運鏡提示詞範例：</p>
+            <table>
+                <tr>
+                    <th>用途</th>
+                    <th>範例指令 (建議搭配英文能獲得最完美的物理運鏡)</th>
+                </tr>
+                <tr>
+                    <td>科技感開場畫面</td>
+                    <td>"Cinematic drone shot, flying through a high-tech glowing laboratory, 4k resolution, hyper-realistic"</td>
+                </tr>
+                <tr>
+                    <td>情境動畫短片</td>
+                    <td>"Close-up shot of an astronaut walking on a purple desert planet, dramatic lighting, detailed reflections"</td>
+                </tr>
+                <tr>
+                    <td>背景音樂生成</td>
+                    <td>"Lo-fi hip hop track for a coding website, relaxing mood, smooth bass, 120 bpm"</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 如何使用 -->
+        <div class="card">
+            <h3>如何將 AI 應用於影音多媒體製作？</h3>
+            <p>1. 寫下你想呈現的畫面腳本，包含時間、地點、主角以及鏡頭是如何移動的</p>
+            <p>2. 登入 Google Gemini 或 Runway 平台，將你的分鏡敘述或參考圖輸入進去</p>
+            <p>3. 調整參數（如設定影片比例 16:9 或 9:16），點擊生成並等待 AI 渲染完成</p>
+            <p>4. 下載生成的 `.mp4` 影片檔案，即可透過 HTML5 的 `<video>` 標籤將成果嵌入網頁專案中</p>
+            <hr>
+            <p style="color: #94a3b8; font-size: 14px;">💡 製作團隊溫馨提醒：在網頁中嵌入 AI 產出的高畫質影片時，記得要做適度壓縮，或是上傳到 YouTube 再用 iframe 內嵌，網頁開啟速度才不會卡住喔！</p>
+        </div>
+
+        <!-- 頁尾（完美同步 2026 年） -->
+        <div class="teammate">
+            <p>&copy; 2026 AI工具箱 鄭書懷 陳冠廷 尤翊丞製作</p>
+        </div>
+    </div>
+</body>
+</html>

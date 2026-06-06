@@ -1,0 +1,224 @@
+/* 全域設定：把瀏覽器預設的間距全部歸零 */
+* {
+    margin: 0;           /* 把所有元素的外邊距設為0 */
+    padding: 0;          /* 把所有元素的內邊距設為0 */
+    box-sizing: border-box;  /* 讓 width 包含 padding 和 border，比較好算寬度 */
+}
+
+/* body：整個網頁的基礎樣式 */
+body {
+    background-color: #0f172a;  /* 深藍色背景 */
+    color: #e2e8f0;             /* 淺灰色文字 */
+    font-family: 'Arial', 'Microsoft JhengHei', sans-serif;  /* 字型：英文用Arial，中文用微軟正黑體 */
+    line-height: 1.8;           /* 行高，讓文字不要擠在一起 */
+}
+
+/* container：讓內容不會太寬，並保持在畫面中間 */
+.container {
+    max-width: 1000px;   /* 內容最大寬度1000像素，太寬的螢幕也不會跑版 */
+    margin: 0 auto;      /* 左右自動平分，達到置中效果 */
+    padding: 0 20px;     /* 左右留20px的內距，避免文字貼到邊緣 */
+}
+
+/* info：頁首的介紹區域 */
+.info {
+    text-align: center;  /* 文字水平置中 */
+    padding: 60px 20px 30px;  /* 上60px 左右20px 下30px */
+}
+
+/* info 底下的 h1：頁面大標題 */
+.info h1 {
+    font-size: 36px;     /* 字體大小36像素 */
+    color: #818cf8;      /* 紫色 */
+    margin-bottom: 15px; /* 下方留15px間距 */
+}
+
+/* info 底下的 p：說明文字 */
+.info p {
+    color: #94a3b8;      /* 灰色文字 */
+    font-size: 18px;     /* 字體大小18像素 */
+    margin-bottom: 30px; /* 下方留30px間距 */
+}
+
+/* info 底下的 ul：工具列表 */
+.info ul {
+    list-style: none;    /* 移除li前面的圓點符號 */
+    max-width: 500px;    /* 列表最大寬度500px */
+    margin: 0 auto;      /* 讓列表水平置中 */
+}
+
+/* li：每個工具選項 */
+.info ul li {
+    background-color: #1e293b;  /* 深色卡片背景 */
+    border: 1px solid #334155;  /* 灰色邊框 */
+    border-radius: 10px;        /* 圓角10像素 */
+    margin-bottom: 12px;        /* 每個選項之間留12px間距 */
+    transition: 0.3s;           /* 滑鼠移過時，會有0.3秒的漸變效果 */
+}
+
+/* li hover：滑鼠移到選項上的樣子 */
+.info ul li:hover {
+    background-color: #334155;  /* 背景變亮一點 */
+    border-color: #818cf8;      /* 邊框變成紫色 */
+}
+
+/* li 底下的 a：連結樣式 */
+.info ul li a {
+    display: block;      /* 讓整個區塊都可以點，不只有文字 */
+    padding: 15px 20px;  /* 上下15px 左右20px 的內距 */
+    color: #e2e8f0;      /* 淺灰色文字 */
+    text-decoration: none;  /* 移除底線 */
+    font-size: 17px;     /* 字體大小17像素 */
+}
+
+/* a hover：滑鼠移到連結上 */
+.info ul li a:hover {
+    color: #818cf8;      /* 文字變成紫色 */
+}
+
+/* nav：上方導覽列 */
+nav {
+    background-color: #1e293b;      /* 深色背景 */
+    border-bottom: 1px solid #334155;  /* 底部灰色邊框 */
+    padding: 0 20px;                /* 左右20px內距 */
+    position: sticky;               /* 固定在畫面頂部 */
+    top: 0;                         /* 黏在頂端 */
+}
+
+/* nav 底下的 ul：導覽列選單 */
+nav ul {
+    list-style: none;    /* 移除圓點符號 */
+    display: flex;       /* 讓li水平排列 */
+    max-width: 1000px;   /* 最大寬度1000px */
+    margin: 0 auto;      /* 水平置中 */
+}
+
+/* nav 底下的 a：導覽連結 */
+nav ul li a {
+    display: block;      /* 讓整個區塊可點擊 */
+    padding: 12px 16px;  /* 內距 */
+    color: #94a3b8;      /* 灰色文字 */
+    text-decoration: none;  /* 移除底線 */
+    font-size: 15px;     /* 字體大小 */
+}
+
+/* nav a hover：滑鼠移到導覽連結上 */
+nav ul li a:hover {
+    color: #fff;         /* 變成白色 */
+}
+
+/* nav a.active：當前頁面的導覽按鈕 */
+nav ul li a.active {
+    color: #818cf8;      /* 紫色，表示你在這一頁 */
+}
+
+/* teammate：頁尾版權區域 */
+.teammate {
+    text-align: center;          /* 文字置中 */
+    padding: 30px;               /* 上下左右都留30px內距 */
+    margin-top: 40px;            /* 上方留40px外距，跟內容分開 */
+    border-top: 1px solid #334155;  /* 上方灰色分隔線 */
+}
+
+/* 頁尾文字 */
+.teammate p {
+    color: #64748b;      /* 比較暗的灰色 */
+    font-size: 14px;     /* 字體小一點 */
+}
+
+/* card：內容卡片 */
+.card {
+    background-color: #1e293b;  /* 深色背景 */
+    border: 1px solid #334155;  /* 灰色邊框 */
+    border-radius: 10px;        /* 圓角 */
+    padding: 20px;              /* 內距20px */
+    margin-bottom: 20px;        /* 下方留20px間距 */
+}
+
+/* 卡片標題 */
+.card h3 {
+    color: #e2e8f0;      /* 淺灰色文字 */
+    margin-bottom: 10px; /* 下方留10px間距 */
+}
+
+/* btn：按鈕共用樣式 */
+.btn {
+    display: inline-block;  /* 讓按鈕可以並排，又能設寬高 */
+    padding: 10px 24px;     /* 內距 */
+    border: none;           /* 移除預設邊框 */
+    border-radius: 8px;     /* 圓角 */
+    font-size: 16px;        /* 字體大小 */
+    cursor: pointer;        /* 滑鼠變成手指圖示 */
+    text-decoration: none;  /* 如果是連結就移除底線 */
+    transition: 0.3s;       /* hover漸變效果0.3秒 */
+}
+
+/* btn-primary：主要的紫色按鈕 */
+.btn-primary {
+    background-color: #818cf8;  /* 紫色背景 */
+    color: #fff;                /* 白色文字 */
+}
+
+/* btn-primary hover：滑鼠移到按鈕上 */
+.btn-primary:hover {
+    background-color: #6366f1;  /* 深一點的紫色 */
+}
+
+/* tag：小標籤/徽章 */
+.tag {
+    display: inline-block;           /* 讓標籤可以並排 */
+    padding: 4px 12px;               /* 內距 */
+    font-size: 13px;                 /* 小字 */
+    border-radius: 20px;             /* 很圓的角，變成膠囊形狀 */
+    background-color: rgba(129, 140, 248, 0.15);  /* 半透明紫色背景 */
+    color: #818cf8;                  /* 紫色文字 */
+}
+
+/* table：表格 */
+table {
+    width: 100%;             /* 寬度撐滿容器 */
+    background-color: #1e293b;  /* 深色背景 */
+    border: 1px solid #334155;  /* 灰色邊框 */
+    border-radius: 10px;        /* 圓角 */
+    overflow: hidden;           /* 讓圓角效果套用到表格 */
+}
+
+/* th：表格的表頭 */
+th {
+    background-color: #334155;  /* 比表格背景亮一點的灰色 */
+    padding: 12px 16px;         /* 內距 */
+    text-align: left;           /* 文字靠左 */
+    color: #e2e8f0;             /* 淺灰色文字 */
+}
+
+/* td：表格的儲存格 */
+td {
+    padding: 12px 16px;         /* 內距 */
+    border-top: 1px solid #334155;  /* 上方灰色分隔線 */
+    color: #94a3b8;             /* 灰色文字 */
+}
+
+/* logo-img：AI圖示 */
+.logo-img {
+    width: 100px;               /* 寬度100像素 */
+    height: 100px;              /* 高度100像素 */
+    margin-bottom: 15px;        /* 下方留15px間距 */
+}
+
+/* hr：水平分隔線 */
+hr {
+    border: none;               /* 移除預設邊框 */
+    height: 1px;                /* 高度1像素 */
+    background-color: #334155;  /* 灰色 */
+    margin: 30px 0;             /* 上下留30px間距 */
+}
+
+/* 手機版：當畫面寬度小於600px時套用 */
+@media (max-width: 600px) {
+    .info h1 {
+        font-size: 28px;        /* 標題字縮小，避免手機螢幕塞不下 */
+    }
+    nav ul {
+        flex-wrap: wrap;        /* 導覽列太長就換行 */
+    }
+}

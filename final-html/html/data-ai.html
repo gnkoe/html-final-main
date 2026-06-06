@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>資料與系統分析AI - AI工具箱</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="text-ai.html">文字AI</a></li>
+            <li><a href="code-ai.html">程式AI</a></li>
+            <li><a href="data-ai.html" class="active">資料AI</a></li>
+            <li><a href="image-ai.html">圖像AI</a></li>
+            <li><a href="video-ai.html">影音AI</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="info">
+            <h1>資料與系統分析AI — Google Gemini</h1>
+            <p>介紹全球最頂尖的 AI 數據分析工具，它們內建了強大的沙盒環境，能自動執行 Python 進行數據清洗、規劃資料庫架構並生成高難度的 SQL 指令。</p>
+        </div>
+
+        <div class="card" style="text-align: center;">
+            <img src="https://www.vpon.com/wp-content/uploads/2024/02/Artificial-Intelligence-for-Big-Data-Analytics-1-768x468.jpg" alt="Data AI Logo" class="logo-img" style="max-width: 120px; border-radius: 8px; margin-bottom: 15px;">
+            <h3>什麼是資料與系統分析 AI？</h3>
+            <p>這個 AI 的強大之處在於它是利用機器學習與自然語言處理等技術，來自動化處理、分析數據並輔助軟體系統開發的技術。它將繁瑣的資料清理、需求剖析與架構設計過程自動化，大幅提升商業洞察的效率並減少開發風險。</p>
+            
+            <div style="margin: 25px 0; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                <a href="https://gemini.google.com" target="_blank" style="padding: 12px 20px; background-color: #1a73e8; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 0.9rem; box-shadow: 0 2px 4px rgba(26,115,232,0.2);">
+                    Google Gemini
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>主要功能</h3>
+            <table>
+                <tr>
+                    <th>功能</th>
+                    <th>說明</th>
+                </tr>
+                <tr>
+                    <td>SQL 自動生成</td>
+                    <td>用日常對話描述需求，自動生成無 Bug 的結構化查詢語言</td>
+                </tr>
+                <tr>
+                    <td>ERD 架構規劃</td>
+                    <td>提供系統規格需求，AI 幫你設計出正規化的多資料表關聯架構</td>
+                </tr>
+                <tr>
+                    <td>SQL 語句優化</td>
+                    <td>自動優化運作緩慢的語句，加入索引 (Index) 讓檢索速度大幅提升</td>
+                </tr>
+                <tr>
+                    <td>巨量數據統計</td>
+                    <td>自動幫你寫出複雜的 Group By 與多表 Join 合併統計</td>
+                </tr>
+                <tr>
+                    <td>資料庫語系變更</td>
+                    <td>一鍵將 MySQL 的語法重構成 SQL Server 或 PostgreSQL 的專用指令</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>優點與缺點</h3>
+            <table>
+                <tr>
+                    <th>優點</th>
+                    <th>缺點</th>
+                </tr>
+                <tr>
+                    <td>秒速撰寫複雜 SQL，大幅提升生產力</td>
+                    <td>無法得知真實資料庫大小，可能高估效能</td>
+                </tr>
+                <tr>
+                    <td>精準設計關聯，防止資料重複性發生錯誤</td>
+                    <td>在極度複雜的分散式資料庫中，邏輯偶爾有死角</td>
+                </tr>
+                <tr>
+                    <td>擅長解釋極度混亂的歷史舊查詢指令</td>
+                    <td>欄位名稱若不符，產出的指令需要手動微調</td>
+                </tr>
+                <tr>
+                    <td>能提供完整的虛擬測試數據供系統測試</td>
+                    <td>商業敏感資料直接餵給 AI 可能會有資安隱私外洩風險</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>學生怎麼用 AI 進行資料分析？</h3>
+            <p>以下是在期末專案、資料庫作業中最實用的操作指令：</p>
+            <table>
+                <tr>
+                    <th>用途</th>
+                    <th>範例指令</th>
+                </tr>
+                <tr>
+                    <td>自動建表</td>
+                    <td>"幫我寫一個電商系統的 members 資料表 SQL，包含流水號、密碼、註冊時間"</td>
+                </tr>
+                <tr>
+                    <td>多表查詢</td>
+                    <td>"我想從會員表、訂單表中，關聯出今天所有還沒出貨的會員姓名與地址"</td>
+                </tr>
+                <tr>
+                    <td>規劃專案模型</td>
+                    <td>"我要做一個線上選課網站的專案，請幫我規劃資料庫應該要有哪幾張資料表"</td>
+                </tr>
+                <tr>
+                    <td>優化大數據</td>
+                    <td>"這段查詢跑得有點慢，請幫我改寫，看看是不是需要加上 Index 索引"</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>如何將 AI 應用於資料分析？</h3>
+            <p>1. 整理好你的資料庫欄位名稱（Schema）</p>
+            <p>2. 打開 Google Gemini、ChatGPT 或 Claude 對話框，將欄位貼入</p>
+            <p>3. 在對話框輸入你的具體需求，例如「請幫我寫出撈取前五名消費者的 SQL 指令」</p>
+            <p>4. 複製 AI 產出的 SQL 指令並貼入資料庫管理軟體中測試執行</p>
+            <hr>
+            <p style="color: #94a3b8; font-size: 14px;">💡 製作團隊溫馨提醒：AI 產出的資料庫關聯圖或 SQL 語法，執行前一定要先在本地測試確認沒問題，不要直接複製貼上喔！</p>
+        </div>
+
+        <div class="teammate">
+            <p>&copy; 2026 AI工具箱 鄭書懷 陳冠廷 尤翊丞製作</p>
+        </div>
+    </div>
+</body>
+</html>
